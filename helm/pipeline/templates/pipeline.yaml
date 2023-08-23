@@ -43,7 +43,7 @@ spec:
       kind: Task
       name: npm
     workspaces:
-      - name: dist
+      - name: source
         workspace: shared-workspace
   - name: build-and-push
     params:
