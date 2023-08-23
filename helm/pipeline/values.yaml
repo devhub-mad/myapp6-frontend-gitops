@@ -1,0 +1,23 @@
+app:
+  name: myapp6-frontend-frontend
+  namespace: devhub
+  cluster: .apps.cluster-8mf2b.sandbox3125.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/myapp6-frontend
+  org: devhub-mad
+  name: myapp6-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000/devhub
+  name: myapp6-frontend
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 2Gi
+  storageClassName: ""
+
+targetEnvironment: dev
+env: []
