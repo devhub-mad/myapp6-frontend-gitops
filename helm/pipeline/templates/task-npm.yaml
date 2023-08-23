@@ -16,7 +16,7 @@ spec:
     This task can be used to run npm goals on a project where package.json is
     present and has some pre-defined npm scripts.
   params:
-    - default: .
+    - default: /dist
       description: The path where package.json of the project is defined.
       name: PATH_CONTEXT
       type: string
